@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localization Tool</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="body">
+      <div id="form">
+        <div id="textarea">
+          <textarea
+            name="EnglishText"
+            id="EnglishText"
+            cols="30"
+            rows="10"
+            placeholder="English"
+          ></textarea>
+          <textarea
+            name="ArabicText"
+            id="ArabicText"
+            cols="30"
+            rows="10"
+            placeholder="Arabic"
+          ></textarea>
+        </div>
+        <div>
+          <input id="addInput" type="submit" value="Add" class="corners1" />
+
+          <input id="clearInput" type="submit" value="C" class="corners2" />
+        </div>
+        <div>
+          <input
+            id="exportInput"
+            type="submit"
+            value="Export"
+            class="corners2"
+          />
+          <select name="select" id="select" class="select-css">
+            <option value="ios">iOS</option>
+            <option value="android">Android</option>
+            <option value="web">WEB</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="collections">
+        <textarea
+          name="English"
+          id="English"
+          cols="30"
+          rows="10"
+          placeholder="English"
+        ></textarea>
+        <textarea
+          name="Keys"
+          id="Keys"
+          cols="30"
+          rows="10"
+          placeholder="Keys"
+        ></textarea>
+        <textarea
+          name="Arabic"
+          id="Arabic"
+          cols="30"
+          rows="10"
+          placeholder="Arabic"
+        ></textarea>
+      </div>
+
+      <div id="localize">
+        <div>
+          <label for="LocalizeEn">English</label>
+          <textarea
+            name="LocalizeEn"
+            id="LocalizeEn"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div>
+          <label for="LocalizeAr">Arabic</label>
+          <textarea
+            name="LocalizeAr"
+            id="LocalizeAr"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

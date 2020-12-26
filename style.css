@@ -1,10 +1,10 @@
 body {
+  background-image: linear-gradient(#bbb0f5, #8bfcf6);
   padding: 0;
 }
 #body {
-  background-image: linear-gradient(#d4a2ff, #f3e6ff);
   height: 100%;
-  margin: 0px;
+  margin: 0px 300px;
   align-items: center;
 }
 #form {
@@ -31,9 +31,7 @@ textarea {
   width: 100%;
   border-radius: 8px;
 }
-#localize textarea {
-  margin: 10px 0px !important;
-}
+
 #form input {
   margin: 10px;
   width: 250px;
@@ -58,38 +56,32 @@ textarea {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  height: 400px;
+  height: 0;
   max-height: 570px;
+  opacity: 0;
 }
-label {
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: 700;
-}
-#localize div {
-  width: 100%;
-  margin: 0px 20px;
-}
+
 .corners1 {
-  background: black;
-  border: 1px black;
+  background: #1D2B36;
+  border: 1px #1D2B36;
   width: 180px !important;
   margin: 10px 5px 10px 10px !important;
 }
 
 .corners2 {
-  border: 2px solid black;
-  color: black !important;
+  border: 2px solid #1D2B36;
+  color: #1D2B36 !important;
+  background: transparent;
 }
 
 .corners1:hover {
-  background: #c182f8;
-  border: 1px #c182f8;
+  border: 2px solid white;
+  color: white !important;
 }
 
 .corners2:hover {
-  border: 2px solid #c182f8;
-  color: #c182f8 !important;
+  border: 2px solid white;
+  color: white !important;
 }
 
 #clearInput {
@@ -97,6 +89,7 @@ label {
   height: 50px !important;
   margin: 10px 10px 5px 10px !important;
 }
+
 .select-css {
   display: block;
   font-size: 16px;
@@ -106,7 +99,7 @@ label {
   width: 250px;
   box-sizing: border-box;
   margin: 10px;
-  border: 1px solid #aaa;
+  border: 1px solid #1D2B36;
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
   border-radius: 0.5em;
   -moz-appearance: none;
@@ -123,13 +116,13 @@ label {
   display: none;
 }
 .select-css:hover {
-  border-color: #888;
+  border-color: #1D2B36;
 }
 .select-css:focus {
-  border-color: #aaa;
+  border-color: #1D2B36;
   box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
-  color: #222;
+  color: #1D2B36;
   outline: none;
 }
 .select-css option {

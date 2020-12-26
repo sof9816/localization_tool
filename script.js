@@ -19,6 +19,10 @@ function clear() {
   document.getElementById("English").value = "";
   document.getElementById("Keys").value = "";
   document.getElementById("Arabic").value = "";
+  document.getElementById("LocalizeEn").value = "";
+  document.getElementById("LocalizeAr").value = "";
+  document.getElementById("localize").style.height = "0";
+  document.getElementById("localize").style.opacity = "0";
 }
 
 function exportFun() {
@@ -65,6 +69,8 @@ function exportFun() {
       document.getElementById("LocalizeAr").value = webArString;
       break;
   }
+  document.getElementById("localize").style.height = "400px";
+  document.getElementById("localize").style.opacity = "1";
 }
 //
 function copyToClipboard(id) {
